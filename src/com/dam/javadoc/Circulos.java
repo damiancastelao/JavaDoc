@@ -1,12 +1,14 @@
+package com.dam.javadoc;
+
 /**
  * Ejemplo: círculos.
  *
  * @author José A. Mañas
  * @version 23.9.2005
  */
-public class Main {
+public class Circulos {
     /**
-     * coordenado X del centro de la circunfernecia
+     * coordenada X del centro de la circunfernecia
      */
     private double centroX;
     /**
@@ -24,14 +26,14 @@ public class Main {
      * @param cy centro: coordenada Y.
      * @param r radio.
      */
-    public Main(double cx, double cy, double r) {
+    public Circulos(double cx, double cy, double r) {
         centroX = cx;
         centroY = cy;
         radio = r;
     }
 
     /**
-     * Getter.
+     * Getter <b>centro</b>
      * @return centro: coordenada X.
      */
     public double getCentroX() {
@@ -40,9 +42,9 @@ public class Main {
 
     /**
      * Calcula la longitud de la circunferencia (perímetro del círculo).
-     * @return circunferencia.
+     * @return perimetro.
      */
-    public double getCircunferencia() {
+    public double getPerimetro() {
         return 2 * Math.PI * radio;
     }
 
